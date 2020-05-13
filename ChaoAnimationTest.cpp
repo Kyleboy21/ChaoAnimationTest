@@ -90,4 +90,4 @@ LABEL_15:
 }
 
 //code change for running away from player screaming  
-WriteJump(ALBHV_RunawayFromPlayer, ALBHV_RunawayFromPlayer_);
+WriteJump(0x0075E2C0, ALBHV_RunawayFromPlayer_);
