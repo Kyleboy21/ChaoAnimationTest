@@ -1,3 +1,9 @@
+//#pragma warning(push)
+//#pragma warning(disable:4838)
+
+#include "stdafx.h"
+#include "SADXModLoader.h"
+
 extern "C"
 {
   __declspec(dllexport) void Init(const char* path, const HelperFunctions& helperFunctions)
