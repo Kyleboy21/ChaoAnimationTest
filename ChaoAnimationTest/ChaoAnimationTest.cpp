@@ -2,9 +2,7 @@
 //#pragma warning(disable:4838)
 
 #include "stdafx.h"
-#include "ChaoAnimationTest.h"
-#include "motiontable.h"
-#include "ModelInfo.cpp"
+#include "chao.h"
 
 signed int __cdecl ALBHV_RunawayFromPlayer_(ObjectMaster* a1)
 {
@@ -89,5 +87,3 @@ LABEL_15:
 	return 0;
 }
 
-//code change for running away from player screaming  
-WriteJump(0x0075E2C0, ALBHV_RunawayFromPlayer_);

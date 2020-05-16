@@ -6,10 +6,6 @@
 #ifndef SADXMODLOADER_H
 #define SADXMODLOADER_H
 
-#if !defined(_M_IX86) && !defined(__i386__)
-#error Mods must be built targeting 32-bit x86, change your settings.
-#endif
-
 #include "ninja.h"
 
 // HACK: Fixes conflict with Windows API PlaySound.
@@ -27,7 +23,7 @@
 
 static inline void ResizeTextureList(NJS_TEXLIST *texlist, Uint32 count)
 {
-	texlist->textures = new NJS_TEXNAME[count] {};
+	texlist->textures = new NJS_TEXNAME[count];
 	texlist->nbTexture = count;
 }
 

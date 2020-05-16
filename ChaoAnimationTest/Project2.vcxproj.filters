@@ -18,12 +18,6 @@
     <ClCompile Include="AnimationFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="chao.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GoalRing.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GoalRingModels.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -36,16 +30,10 @@
     <ClCompile Include="ModelInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="motiontable.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TextConv.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Trampoline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ChaoAnimationTest.cpp">
@@ -54,12 +42,12 @@
     <ClCompile Include="dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimationFile.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="chao.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="d3d8types.h">
@@ -75,9 +63,6 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="ModelInfo.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="motiontable.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="ninja.h">
@@ -123,6 +108,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="ChaoAnimationTest.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="chao.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

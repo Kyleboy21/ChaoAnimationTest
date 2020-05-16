@@ -1,6 +1,5 @@
 #pragma once
 #include "SADXModLoader.h"
-#include "motiontable.h"
 #include <random>
 struct ChaoSetmedalThing
 {

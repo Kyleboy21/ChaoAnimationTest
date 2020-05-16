@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "SADXModLoader.h"
+#include "ChaoAnimationTest.h"
 
 extern "C"
 {

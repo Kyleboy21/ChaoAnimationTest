@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{299CED23-A21C-4655-AF30-14E0261F4AAB}</ProjectGuid>
     <RootNamespace>Project2</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -75,6 +75,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -112,18 +113,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AnimationFile.cpp" />
-    <ClCompile Include="chao.cpp" />
     <ClCompile Include="ChaoAnimationTest.cpp" />
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="GoalRing.cpp" />
     <ClCompile Include="GoalRingModels.cpp" />
     <ClCompile Include="IniFile.cpp" />
     <ClCompile Include="LandTableInfo.cpp" />
+    <ClCompile Include="mod.cpp" />
     <ClCompile Include="ModelInfo.cpp" />
-    <ClCompile Include="motiontable.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="TextConv.cpp" />
-    <ClCompile Include="Trampoline.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimationFile.h" />
@@ -134,7 +132,6 @@
     <ClInclude Include="LandTableInfo.h" />
     <ClInclude Include="MemAccess.h" />
     <ClInclude Include="ModelInfo.h" />
-    <ClInclude Include="motiontable.h" />
     <ClInclude Include="ninja.h" />
     <ClInclude Include="njdef.h" />
     <ClInclude Include="SADXEnums.h" />

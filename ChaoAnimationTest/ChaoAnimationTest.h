@@ -1,7 +1,5 @@
 #pragma once
-#include "SADXModLoader.h"
-#include "IniFile.hpp"
+#include "stdafx.h"
 #include "chao.h"
-#include "Trampoline.h"
-#include "ModelInfo.h"
 
+signed int __cdecl ALBHV_RunawayFromPlayer_(ObjectMaster* a1);

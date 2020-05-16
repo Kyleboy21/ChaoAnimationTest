@@ -1,0 +1,80 @@
+﻿  ChaoAnimationTest.cpp
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(15): error C2143: syntax error: missing ';' before '&'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(15): error C2059: syntax error: ')'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(31): error C2061: syntax error: identifier 'EMOTION_ENUM'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(31): error C2143: syntax error: missing ')' before '__cdecl'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(31): error C2059: syntax error: '__cdecl'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(31): error C2059: syntax error: ')'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(32): error C2061: syntax error: identifier 'EMOTION_ENUM'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(32): error C2143: syntax error: missing ')' before '__cdecl'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(32): error C2059: syntax error: '__cdecl'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(32): error C2059: syntax error: ')'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(44): error C2061: syntax error: identifier 'AL_ITEM_INFO'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(44): error C2143: syntax error: missing ')' before '__cdecl'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(44): error C2059: syntax error: '__cdecl'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(44): error C2059: syntax error: ')'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(48): error C2143: syntax error: missing ';' before '*'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(48): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(48): error C2059: syntax error: '__cdecl'
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(15): error C2440: '=': cannot convert from 'EntityData1 *' to 'ChaoData1 *'
+  c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(15): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(16): error C2440: '=': cannot convert from 'void *' to 'ChaoData2 *'
+  c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(16): note: Conversion from 'void*' to pointer to non-'void' requires an explicit cast
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(17): error C3861: 'AL_ParameterGetSkill': identifier not found
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(18): error C2039: 'Behavior': is not a member of 'ChaoData1'
+  c:\github\chaoanimationtest\chaoanimationtest\sadxstructs.h(1185): note: see declaration of 'ChaoData1'
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(36): error C2198: 'void (__cdecl *const )(ObjectMaster *,int,int)': too few arguments for call
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(39): error C2198: 'void (__cdecl *const )(ObjectMaster *,int,int)': too few arguments for call
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(43): error C2198: 'void (__cdecl *const )(ObjectMaster *,int,int)': too few arguments for call
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(46): error C3861: 'sub_75E180': identifier not found
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(47): error C2039: 'Behavior': is not a member of 'ChaoData1'
+  c:\github\chaoanimationtest\chaoanimationtest\sadxstructs.h(1185): note: see declaration of 'ChaoData1'
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(48): error C2039: 'Behavior': is not a member of 'ChaoData1'
+  c:\github\chaoanimationtest\chaoanimationtest\sadxstructs.h(1185): note: see declaration of 'ChaoData1'
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(49): error C2039: 'Behavior': is not a member of 'ChaoData1'
+  c:\github\chaoanimationtest\chaoanimationtest\sadxstructs.h(1185): note: see declaration of 'ChaoData1'
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(51): error C3861: 'AL_IsEmotionTimerReset': identifier not found
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(53): error C2065: 'EM_ST_TIRE': undeclared identifier
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(55): error C2039: 'Behavior': is not a member of 'ChaoData1'
+  c:\github\chaoanimationtest\chaoanimationtest\sadxstructs.h(1185): note: see declaration of 'ChaoData1'
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(56): error C2039: 'Behavior': is not a member of 'ChaoData1'
+  c:\github\chaoanimationtest\chaoanimationtest\sadxstructs.h(1185): note: see declaration of 'ChaoData1'
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(65): error C3861: 'AL_Dist2FromAim': identifier not found
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(69): error C3861: 'MOV_Dist2FromPlayer': identifier not found
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(73): error C2039: 'Behavior': is not a member of 'ChaoData1'
+  c:\github\chaoanimationtest\chaoanimationtest\sadxstructs.h(1185): note: see declaration of 'ChaoData1'
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(75): error C2039: 'MoveWork': is not a member of 'ChaoData2'
+  c:\github\chaoanimationtest\chaoanimationtest\sadxstructs.h(1236): note: see declaration of 'ChaoData2'
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(77): error C2039: 'Behavior': is not a member of 'ChaoData1'
+  c:\github\chaoanimationtest\chaoanimationtest\sadxstructs.h(1185): note: see declaration of 'ChaoData1'
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(80): error C2039: 'MoveWork': is not a member of 'ChaoData2'
+  c:\github\chaoanimationtest\chaoanimationtest\sadxstructs.h(1236): note: see declaration of 'ChaoData2'
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(82): error C2039: 'MoveWork': is not a member of 'ChaoData2'
+  c:\github\chaoanimationtest\chaoanimationtest\sadxstructs.h(1236): note: see declaration of 'ChaoData2'
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(83): error C2039: 'MoveWork': is not a member of 'ChaoData2'
+  c:\github\chaoanimationtest\chaoanimationtest\sadxstructs.h(1236): note: see declaration of 'ChaoData2'
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(85): error C2039: 'MoveWork': is not a member of 'ChaoData2'
+  c:\github\chaoanimationtest\chaoanimationtest\sadxstructs.h(1236): note: see declaration of 'ChaoData2'
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(85): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\github\chaoanimationtest\chaoanimationtest\chaoanimationtest.cpp(86): error C3861: 'AL_SetMotionSpd': identifier not found
+  mod.cpp
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(15): error C2143: syntax error: missing ';' before '&'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(15): error C2059: syntax error: ')'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(31): error C2061: syntax error: identifier 'EMOTION_ENUM'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(31): error C2143: syntax error: missing ')' before '__cdecl'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(31): error C2059: syntax error: '__cdecl'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(31): error C2059: syntax error: ')'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(32): error C2061: syntax error: identifier 'EMOTION_ENUM'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(32): error C2143: syntax error: missing ')' before '__cdecl'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(32): error C2059: syntax error: '__cdecl'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(32): error C2059: syntax error: ')'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(44): error C2061: syntax error: identifier 'AL_ITEM_INFO'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(44): error C2143: syntax error: missing ')' before '__cdecl'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(44): error C2059: syntax error: '__cdecl'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(44): error C2059: syntax error: ')'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(48): error C2143: syntax error: missing ';' before '*'
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(48): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\github\chaoanimationtest\chaoanimationtest\chao.h(48): error C2059: syntax error: '__cdecl'
+  Generating Code...

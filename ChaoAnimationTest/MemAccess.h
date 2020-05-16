@@ -67,7 +67,7 @@ static inline Tret SizeOfArray(const T(&)[N])
 #ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
 #endif
-#include <Windows.h>
+#include <windows.h>
 
 static HANDLE curproc;
 static bool curprocinitialized = false;
@@ -131,9 +131,9 @@ static inline BOOL WriteData(void *writeaddress, const T(&data)[N])
  * @return Nonzero on success; 0 on error (check GetLastError()).
  */
 template <int count>
-static inline BOOL WriteData(void *address, uint8_t data, SIZE_T *byteswritten)
+static inline BOOL WriteData(void *address, const char data, SIZE_T *byteswritten)
 {
-	uint8_t buf[count];
+	char buf[count];
 	memset(buf, data, count);
 	int result = WriteData(address, buf, count, byteswritten);
 	return result;
@@ -146,7 +146,7 @@ static inline BOOL WriteData(void *address, uint8_t data, SIZE_T *byteswritten)
  * @return Nonzero on success; 0 on error (check GetLastError()).
  */
 template <int count>
-static inline BOOL WriteData(void *address, uint8_t data)
+static inline BOOL WriteData(void *address, char data)
 {
 	return WriteData<count>(address, data, nullptr);
 }

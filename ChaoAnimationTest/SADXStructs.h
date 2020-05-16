@@ -1,7 +1,7 @@
 /**
- * SADX Mod Loader.
- * SADX structs.
- */
+* SADX Mod Loader.
+* SADX structs.
+*/
 
 #ifndef SADXMODLOADER_SADXSTRUCTS_H
 #define SADXMODLOADER_SADXSTRUCTS_H
@@ -21,7 +21,7 @@ typedef struct Rotation {
 struct ObjectMaster;
 typedef void(__cdecl *ObjectFuncPtr)(ObjectMaster *);
 typedef void(__cdecl *VBufferFuncPtr)(NJS_MESHSET_SADX*, NJS_POINT3*, NJS_VECTOR*);
-typedef const Float* NJS_MATRIX_CONST_PTR;
+
 
 // TODO: Grab actual structs from disassembly.
 typedef void ABC_TXT_struct;
@@ -53,9 +53,9 @@ struct AllocatedMem
 
 struct SaveFileInfo
 {
-	const char *Filename;
-	uint32_t LowDate;
-	uint32_t HighDate;
+	char *Filename;
+	DWORD LowDate;
+	DWORD HighDate;
 	SaveFileInfo *Next;
 };
 
@@ -77,7 +77,7 @@ struct FogData
 
 struct PVMEntry
 {
-	const char* Name;
+	char *Name;
 	NJS_TEXLIST *TexList;
 };
 
@@ -96,7 +96,7 @@ struct ObjectListEntry
 	float Distance;
 	int field_8;
 	ObjectFuncPtr LoadSub;
-	const char *Name;
+	char *Name;
 };
 
 struct StartPosition
@@ -147,7 +147,7 @@ struct RecapScreen
 {
 	float Speed;
 	int LineCount;
-	const char **TextData;
+	char **TextData;
 };
 
 struct COL
@@ -179,7 +179,7 @@ struct LandTable
 	float Unknown_1;
 	COL *Col;
 	GeoAnimData *AnimData;
-	const char *TexName;
+	char *TexName;
 	NJS_TEXLIST *TexList;
 	int Unknown_4;
 	int Unknown_5;
@@ -372,8 +372,7 @@ struct CharObj2
 
 struct CollisionData
 {
-	char field_0;
-	char field_1;
+	short field_0;
 	char field_2;
 	char field_3;
 	int field_4;
@@ -555,7 +554,7 @@ struct ObjectMaster
 
 struct VideoData
 {
-	const char *Filename;
+	char *Filename;
 	int field_4;
 	int NumFrames;
 	int16_t Width;
@@ -699,7 +698,7 @@ struct CutsceneData
 
 struct HintText_Text
 {
-	const char *Message;
+	char *Message;
 	int Time;
 };
 
@@ -744,7 +743,7 @@ struct TrialLevelList
 struct SoundFileInfo
 {
 	int Bank;
-	const char *Filename;
+	char *Filename;
 };
 
 struct SoundList
@@ -839,7 +838,7 @@ struct RestartData
 struct MESFileText
 {
 	int16_t *field_0;
-	const char **field_4;
+	char **field_4;
 };
 
 struct MESFileHeader
@@ -874,13 +873,13 @@ struct FieldNPCList
 
 struct MusicInfo
 {
-	const char *Name;
+	char *Name;
 	int Loop;
 };
 
 struct SoundTestEntry
 {
-	const char *Name;
+	char *Name;
 	int ID;
 };
 
@@ -1093,14 +1092,18 @@ struct ChaoDataBase
 	char field_13E[10];
 	short Energy;
 	char Normal_Curiosity;
-	char field_14B;
+	char Kindness;
 	char CryBaby_Energetic;
 	char Naive_Normal;
-	char field_14E[2];
-	char Normal_BigEater;
-	char field_151[4];
+	char Solitude;
+	char Vitality;
+	char Normal_BigEater; //"Glutton"
+	char Regain;
+	char Skillful;
+	char Charm;
+	char Chatty;
 	char Normal_Carefree;
-	char field_156;
+	char Fickle;
 	char FavoriteFruit;
 	char field_158[2];
 	char CoughLevel;
@@ -1210,7 +1213,18 @@ struct ChaoData1
 	ChaoUnknownE *unknown_e_2;
 	char field_5D0[216];
 	short field_6A8;
-	char field_6AA[310];
+	char field_6AA[14];
+	int field_6B8;
+	char field_6BC[32];
+	int field_6DC;
+	int field_6E0;
+	int field_6E4;
+	int field_6E8;
+	int field_6EC;
+	int field_6F0;
+	int field_6F4;
+	int field_6F8;
+	char gap6FC[228];
 	char field_7E0;
 	char field_7E1[19];
 	ChaoUnknown UnknownArray[5];
@@ -1562,70 +1576,13 @@ struct NBChunk
 struct TitleCardTexture
 {
 	int Level;
-	const char *TextureName;
+	char *TextureName;
 };
 
 struct TitleCardTextureList
 {
 	int Count;
 	TitleCardTexture *List;
-};
-
-struct CharBossData
-{
-	int BossID;
-	ObjectMaster *Player1;
-	ObjectMaster *BossCharacter;
-	int anonymous_3;
-	void(__cdecl *DeleteFunc)();
-};
-
-struct BlackMarketItemAttributes
-{
-	int PurchasePrice;
-	int SalePrice;
-	__int16 RequiredEmblems;
-	__int16 Name;
-	__int16 Description;
-	__int16 anonymous_7;
-};
-
-struct BlackMarketItemAttributesList
-{
-	BlackMarketItemAttributes *Items;
-	int Count;
-};
-
-struct TutorialScreenData
-{
-	__int16 BoxX;
-	__int16 BoxY;
-	__int16 anonymous_2;
-	__int16 BoxScaleX;
-	__int16 BoxScaleY;
-	__int16 anonymous_3;
-	void *Pointer1;
-	void *Pointer2;
-};
-
-struct TutorialScreenHead
-{
-	unsigned __int16 arrayLength;
-	unsigned __int16 pageCount;
-	TutorialScreenData *data;
-	NJS_TEXLIST *texlistA;
-	NJS_TEXLIST *texlistB;
-	const char *pvmA;
-	const char *pvmB;
-};
-
-struct DebugStringInfo
-{
-	__int16 column;
-	__int16 row;
-	__int16 fontsize;
-	int color;
-	const char *text;
 };
 
 #pragma pack(pop)
